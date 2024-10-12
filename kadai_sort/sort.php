@@ -24,12 +24,12 @@
                     }
                 }                
             }
-            // 関数の呼び出し:昇順ソート(asc)
+            // 関数の呼び出し:昇順ソート
             $nums = [15, 4, 18, 23, 10];
             $order = 'TRUE';
             sort_2way($nums, $order);
 
-            // 関数の呼び出し:降順ソート(desc)
+            // 関数の呼び出し:降順ソート
             // $nums = [15, 4, 18, 23, 10];
             $order = 'FALSE';
             sort_2way($nums, $order);
