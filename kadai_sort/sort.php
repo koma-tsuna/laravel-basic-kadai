@@ -8,9 +8,9 @@
     <body>
         <p>
             <?php
-            // ソート関数sort_2way(第一引数:配列$array、第二引数:ソート方向asc/desc)を定義する
+            // ソート関数sort_2way(第一引数:配列$nums、第二引数:ソート方向TRUE/FALSE)を定義する
             function sort_2way(array $nums, string $order) {
-                if($order === 'asc') {
+                if($order === 'TRUE') {
                     echo '昇順にソートします。' . '<br>';
                     sort($nums);
                     foreach($nums as $key => $val) {
@@ -26,12 +26,12 @@
             }
             // 関数の呼び出し:昇順ソート(asc)
             $nums = [15, 4, 18, 23, 10];
-            $order = 'asc';
+            $order = 'TRUE';
             sort_2way($nums, $order);
 
             // 関数の呼び出し:降順ソート(desc)
             // $nums = [15, 4, 18, 23, 10];
-            $order = 'desc';
+            $order = 'FALSE';
             sort_2way($nums, $order);
 
             ?>
